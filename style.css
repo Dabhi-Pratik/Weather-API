@@ -1,0 +1,83 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    /* Body background and center alignment */
+    body {
+        background: url("img/bg.jpg") no-repeat center center/cover;
+        min-height: 100vh;
+        padding: 20px;
+
+        /* Center the card */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Glassmorphism card */
+    .card {
+        width: 600px;
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.18);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+        text-align: center;
+    }
+
+    /* Input field styling */
+    input {
+        border: none;
+        padding: 10px 12px;
+        border-radius: 12px;
+        font-size: 25px;
+        /* color: #f2994a; */
+        font-weight: bold;
+    }
+
+    /* Search button */
+    button {
+        padding: 10px 16px;
+        font-size: 25px;
+        cursor: pointer;
+        border: none;
+        background: #f2994a;
+        color: white;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #e67e22;
+        transform: translateY(-5px);
+    }
+
+    /* Weather result container */
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Error message */
+    h1 {
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    /* Weather details box */
+    .weather-box {
+        width: 100%;
+        padding: 18px;
+        margin-top: 20px;
+        border-radius: 14px;
+        font-size: 30px;
+        color: #fff;
+
+        /* Glass blur for result box */
+        backdrop-filter: blur(10px);
+    }
